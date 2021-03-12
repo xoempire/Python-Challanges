@@ -1,0 +1,8 @@
+f_happy=open('/Users/xoempire/Desktop/happynimbers.txt')
+f_prime=open('/Users/xoempire/Desktop/primenumbers.txt')
+happy_lines=f_happy.readlines()
+prime_lines=f_prime.readlines()
+happy=set([i.strip('\n') for i in happy_lines])
+prime=set([i.strip('\n') for i in prime_lines])
+a=set.intersection(happy, prime)
+print(sorted(a))
